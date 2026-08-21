@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PocketBill — Simple Offline Expense &amp; Income Tracker</title>
+  <meta name="description" content="PocketBill is a simple offline expense and income tracker that helps you organize your daily finances without an account or cloud storage." />
+  <meta name="theme-color" content="#1F8A4C" />
+  <meta name="keywords" content="expense tracker, income tracker, money manager, offline expense tracker, expense manager, budget tracker, BDT expense tracker, personal finance tracker" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PocketBill — Simple Offline Expense &amp; Income Tracker" />
+  <meta property="og:description" content="Track your money, stay organized, and keep your financial records on your device. No account. No cloud." />
+  <meta property="og:image" content="assets/icon.png" />
+  <meta property="og:url" content="https://mukitu.github.io/pocketbill-app/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PocketBill — Simple Offline Expense &amp; Income Tracker" />
+  <meta name="twitter:description" content="Track your money, stay organized, and keep your financial records on your device." />
+  <meta name="twitter:image" content="assets/icon.png" />
+
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================== -->
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="PocketBill home">
+        <img src="assets/icon.png" alt="" width="32" height="32" />
+        <span>PocketBill</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav id="primary-nav" class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#privacy">Privacy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-tagline">Simple. Private. Offline.</span>
+          <h1 id="hero-title">Track Every Taka, <span>Simply.</span></h1>
+          <p class="hero-sub">
+            PocketBill is a simple offline expense and income tracker that helps
+            you keep your daily finances organized — without an account or
+            cloud storage.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary is-disabled" href="#" aria-disabled="true" tabindex="-1">
+              Google Play — Coming Soon
+            </a>
+            <a class="btn btn-secondary" href="privacy-policy.html">
+              Privacy Policy
+            </a>
+          </div>
+          <div class="hero-meta" aria-label="Highlights">
+            <span>Offline-first</span>
+            <span>No account</span>
+            <span>Local SQLite</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-mockup" role="img" aria-label="PocketBill dashboard preview">
+            <div class="phone-screen">
+              <img src="assets/screenshot-1.png" alt="PocketBill dashboard preview" />
+            </div>
+          </div>
+          <p class="phone-caption">A look inside PocketBill.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FEATURES
+    ========================================================== -->
+    <section id="features" class="section" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Why PocketBill?</span>
+          <h2 id="features-title">Built for everyday money tracking</h2>
+          <p>Four simple ideas that guide the app — no clutter, no signup.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+              </svg>
+            </div>
+            <h3>Offline First</h3>
+            <p>Your financial entries stay available even without an internet connection.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3>Simple Expense Tracking</h3>
+            <p>Quickly record everyday expenses with a clean amount-first form.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+            </div>
+            <h3>Income Tracking</h3>
+            <p>Keep track of money coming in — salary, freelance, business, and more.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3>Private by Design</h3>
+            <p>PocketBill does not require an account or cloud sync for your financial records.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         HOW IT WORKS
+    ========================================================== -->
+    <section id="how" class="section section-alt" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">How it works</span>
+          <h2 id="how-title">Three simple steps</h2>
+          <p>Start tracking your money in under a minute.</p>
+        </header>
+
+        <div class="steps">
+          <article class="step-card reveal">
+            <div class="step-number">01</div>
+            <h3>Add an Expense or Income</h3>
+            <p>Open the app, tap the green or red button, and type the amount.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-number">02</div>
+            <h3>See Your Balance &amp; History</h3>
+            <p>Your current balance and recent transactions appear on the home screen.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <div class="step-number">03</div>
+            <h3>Keep Your Records Organized</h3>
+            <p>Browse, search, or delete entries. Switch between light and dark themes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SCREENSHOTS
+    ========================================================== -->
+    <section id="screenshots" class="section" aria-labelledby="screenshots-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Screenshots</span>
+          <h2 id="screenshots-title">A peek inside PocketBill</h2>
+          <p>Tap any screenshot to view it larger.</p>
+        </header>
+
+        <div class="shot-grid">
+          <figure class="shot-card reveal" tabindex="0" role="button" aria-label="View Dashboard screenshot">
+            <div class="shot-img">
+              <img src="assets/screenshot-1.png" alt="PocketBill dashboard showing balance and recent transactions" loading="lazy" />
+            </div>
+            <figcaption class="shot-label">Dashboard</figcaption>
+          </figure>
+
+          <figure class="shot-card reveal" tabindex="0" role="button" aria-label="View Add Expense screenshot">
+            <div class="shot-img">
+              <img src="assets/screenshot-2.png" alt="Add Expense form with amount and category" loading="lazy" />
+            </div>
+            <figcaption class="shot-label">Add Expense</figcaption>
+          </figure>
+
+          <figure class="shot-card reveal" tabindex="0" role="button" aria-label="View Add Income screenshot">
+            <div class="shot-img">
+              <img src="assets/screenshot-3.png" alt="Add Income form with amount and source" loading="lazy" />
+            </div>
+            <figcaption class="shot-label">Add Income</figcaption>
+          </figure>
+
+          <figure class="shot-card reveal" tabindex="0" role="button" aria-label="View History screenshot">
+            <div class="shot-img">
+              <img src="assets/screenshot-4.png" alt="Transaction history list with date and amount" loading="lazy" />
+            </div>
+            <figcaption class="shot-label">History</figcaption>
+          </figure>
+
+          <figure class="shot-card reveal" tabindex="0" role="button" aria-label="View Settings screenshot">
+            <div class="shot-img">
+              <img src="assets/screenshot-5.png" alt="Settings screen with theme picker and clear data option" loading="lazy" />
+            </div>
+            <figcaption class="shot-label">Settings</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PRIVACY
+    ========================================================== -->
+    <section id="privacy" class="section section-soft" aria-labelledby="privacy-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Privacy</span>
+          <h2 id="privacy-title">Your money records stay on your device</h2>
+          <p>PocketBill is built around local storage. The app does not sync your data to any PocketBill server.</p>
+        </header>
+
+        <div class="privacy-grid">
+          <div class="privacy-card reveal">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+              Local-only data
+            </h3>
+            <ul>
+              <li>Stored in a local SQLite database on your device</li>
+              <li>No account required</li>
+              <li>No cloud synchronization</li>
+              <li>No PocketBill backend</li>
+              <li>Expense and Income records remain local</li>
+            </ul>
+          </div>
+
+          <div class="privacy-card reveal">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              You stay in control
+            </h3>
+            <ul>
+              <li>Delete any entry from the History screen</li>
+              <li>Clear every record from Settings</li>
+              <li>Uninstalling the app permanently removes stored data</li>
+              <li>PocketBill does not send your expense and income records to its own servers</li>
+              <li>Read the full Privacy Policy for details</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ads-note" role="note">
+          <span class="ads-note-icon" aria-hidden="true">i</span>
+          <div>
+            <strong>Advertising.</strong> PocketBill is supported by advertising. The app uses Google Mobile Ads (AdMob) to display ads. Advertising services may process information required to deliver and measure advertisements according to their own policies. See the <a href="privacy-policy.html">Privacy Policy</a> for details.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT
+    ========================================================== -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Contact</span>
+          <h2 id="contact-title">Get in touch</h2>
+          <p>Questions, feedback, or feature requests? Reach out to the developer.</p>
+        </header>
+
+        <div class="contact-card">
+          <p>For support, feature requests, or privacy questions, please contact the developer through the Play Store listing once PocketBill is published.</p>
+          <span class="contact-support">Support email coming soon</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/icon.png" alt="" width="28" height="28" />
+            PocketBill
+          </div>
+          <p class="footer-tag">Simple. Private. Offline.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Site</h4>
+          <a href="index.html">Home</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> PocketBill. All rights reserved.</span>
+        <span>Made with care for everyday money tracking.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot preview">
+    <button class="lightbox-close" type="button" aria-label="Close preview">×</button>
+    <img src="" alt="" />
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
