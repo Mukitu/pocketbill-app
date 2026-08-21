@@ -1,0 +1,245 @@
+/* ==========================================================================
+   PocketBill — Privacy Policy Page Styles
+   ========================================================================== */
+
+:root {
+  --brand: #1F8A4C;
+  --brand-dark: #166d3a;
+  --brand-light: #e7f4ec;
+  --bg: #ffffff;
+  --bg-alt: #f7f8fa;
+  --surface: #ffffff;
+  --border: #e3e7e5;
+  --text: #1a2b22;
+  --text-muted: #5a6b62;
+  --shadow-sm: 0 2px 8px rgba(15, 50, 30, 0.06);
+  --radius: 14px;
+  --maxw: 880px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg-alt);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--brand-dark);
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); margin: 0 0 12px 0; }
+h2 { font-size: 1.3rem; margin: 36px 0 12px; padding-top: 8px; }
+h3 { font-size: 1.05rem; margin: 24px 0 8px; }
+
+p {
+  margin: 0 0 14px 0;
+  color: var(--text-muted);
+}
+
+ul {
+  padding-left: 22px;
+  margin: 0 0 14px 0;
+  color: var(--text-muted);
+}
+
+li {
+  padding: 4px 0;
+}
+
+/* ------------------------------- Layout ------------------------------- */
+.privacy-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.privacy-header-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.brand img {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: var(--brand);
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 40px 20px 64px;
+}
+
+.policy-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-sm);
+}
+
+.policy-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 0 0 24px 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.policy-meta strong {
+  color: var(--text);
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.policy-intro {
+  background: var(--brand-light);
+  border-left: 4px solid var(--brand);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 0 0 28px 0;
+  color: var(--text);
+  font-size: 0.97rem;
+}
+
+.policy-intro p {
+  margin: 0;
+  color: var(--text);
+}
+
+.callout {
+  background: #fff8e7;
+  border: 1px solid #f1d893;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin: 14px 0;
+  font-size: 0.92rem;
+  color: #6b5217;
+}
+
+.callout strong {
+  color: #4d3a0e;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px 20px 48px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.footer a {
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+  color: var(--brand);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 24px 16px 48px;
+  }
+  .policy-card {
+    padding: 28px 22px;
+    border-radius: 12px;
+  }
+  .privacy-header-inner {
+    padding: 12px 16px;
+  }
+}
+
+/* Focus styles */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 12px;
+  background: var(--brand);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  z-index: 100;
+  transition: top 150ms ease;
+}
+
+.skip-link:focus-visible {
+  top: 12px;
+  color: #fff;
+}
